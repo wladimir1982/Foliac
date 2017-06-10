@@ -1,0 +1,33 @@
+/*Text and buton Section*/
+
+.text-btn {
+    height: 500px;
+    background-image: url('../../images/men-computer%20.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.text-btn__info {
+    width: 50%;
+    padding-right: 13.6%;
+    float: right;
+    color: white;
+}
+.text-btn__info--v-align {
+    display: table-cell;
+    height: 500px;
+    vertical-align: middle;
+}
+.text-btn__subtitle {
+    margin-top: 0;
+    font-size: 22px;
+    font-weight: 400;
+}
+.text-btn__text {
+    height: 146px;
+    overflow: hidden;
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 25px;
+}
