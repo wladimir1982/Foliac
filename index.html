@@ -7,9 +7,9 @@
     <title>Foliac</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/scripts.js"></script>
-    <script type="text/javascript" src="js/togle.js" defer></script>
+    <link rel="stylesheet" href="slick-1.6.0/slick/slick.css">
+    <link rel="stylesheet" href="slick-1.6.0/slick/slick-theme.css">
+
 </head>
 
 <body>
@@ -17,26 +17,26 @@
     <header class="site-header">
         <div class="container">
             <a class="logo" href="index.html">
-                <img src="images/logo.png" alt="Folic">
+                <img src="images/logo.png" alt="Foliac">
             </a>
-            <nav class="site-navigation">
+            <nav id="menu" class="site-navigation">
                 <div class="menu-icon">
                     <i class="fa fa-bars" aria-hidden="true"></i>
                     <i class="fa fa-times" aria-hidden="true"></i>
                 </div>
                 <div class="menuToggle">Menu</div>
                 <ul class="menu">
-                    <li class="menu-item">
+                    <li class="menu-item current">
                         <a href="#">Accueil</a>
                     </li>
                     <li class="menu-item">
-                        <a href="#">Portfolio</a>
+                        <a href="#tabs">Portfolio</a>
                     </li>
                     <li class="menu-item">
-                        <a href="#" target="_blank">About</a>
+                        <a href="#about" target="_blank">About</a>
                     </li>
                     <li class="menu-item">
-                        <a href="#">Contact</a>
+                        <a href="#contact">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -53,8 +53,9 @@
     </header>
     <main>
         <!-- Tabs -->
-        <div class="tabs">
+        <div id="tabs" class="tabs">
             <div class="container">
+                <div class="menuTabs">Menu</div>
                 <ul class="tabs-menu clear">
                     <li class="tabs-menu__item">
                         <a class="tabs-menu__link tabs-menu__link--active" href="#">Tous les projets</a>
@@ -123,7 +124,7 @@
         </div>
         <!-- .tabs-->
         <!--				Section with text and buton-->
-        <section class="text-btn">
+        <section id="about" class="text-btn">
             <div class="container clear">
                 <div class="text-btn__info">
                     <div class="text-btn__info--v-align">
@@ -139,7 +140,7 @@
             </div>
         </section>
         <!-- .text-btn -->
-        <section class="contact-form">
+        <section id="contact" class="contact-form">
             <div class="container container--700--width">
                 <h1 class="contact-form__title">Me contacter</h1>
                 <form action="" class="form">
@@ -194,6 +195,15 @@
         <!-- .container -->
     </footer>
 
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/togle.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
+    <script type="text/javascript" src="js/scroll.anchor.js"></script>
+    <script type="text/javascript" src="js/scroll.js"></script>
+    <script type="text/javascript" src="js/smooth.scroll.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
 </body>
 
 </html>
