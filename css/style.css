@@ -112,11 +112,13 @@
     color: #48bf72;
 }
 
+/*
 @media only screen and (max-width: 991px) {
     .menu {
         display: non;
     }
 }
+*/
 
 .menuToggle {
     display: none;
@@ -162,12 +164,27 @@
 /*Tabs*/
 
 .tabs {
+    position: relative;
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
 .tabs .container {
     text-align: center;
+}
+
+.menuTabs {
+    display: none;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.menuTabs:hover {
+    color: #48bf72;
 }
 
 .tabs-menu {
@@ -338,13 +355,301 @@
         font-size: 28px;
     }
 }
-
-@media only screen and (min-width: 768px) {
-    @content;
+@media only screen and (max-width: 951px) {
+    .info__title {
+        font-size: 38px;
+    }
+    .info__subtitle {
+        font-size: 26px;
+    }
 }
 
-@media only screen and (min-width: 480px) {
-    @content;
+@media only screen and (max-width: 772px) {
+     .site-header {
+        height: 100%;
+    }
+    .menuToggle {
+        display: block;
+        margin-bottom: 15px;
+    }
+    .menu {
+        position: absolute;
+        top: 60%;
+        left: 25%;
+        padding: 5px;
+        line-height: 17px;
+        display: none;
+        background: rgba(143, 188, 143, 0.5);
+    }
+    .menu .menu-item {
+        display: block;
+        text-align: center;
+        font-size: 11px;
+        padding: 0;
+        margin: 0;
+    }
+    .menu .menu-item:before {
+        content: '';
+    }
+    .menu .menu-item a {
+        color: brown;
+    }
+    .site-header .info {
+        margin: 5vh auto 0;
+    }
+    .info__title {
+        font-size: 19px;
+    }
+    .info__subtitle {
+        font-size: 14px;
+    }
+    .btn-wrap {
+        padding-top: 10px;
+    }
+    .btn-wrap__btn {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+     /*    Tabs*/
+    .menuTabs {
+        display: block;
+        margin-bottom: 15px;
+    }
+    .tabs-menu {
+        width: 96%;
+        position: absolute;
+        display: none;
+        background: rgba(143, 188, 143, 0.5);
+        z-index: 2;
+    }
+    .tabs-menu__item {
+        float: none;
+        padding: 0 5px 5px;
+        display: block;
+    }
+    .tab-content__left-col {
+        display: none;
+        width: 100%;
+        padding-right: 0;
+        float: none;
+    }
+    .tab-content__right-col {
+        width: 100%;
+        padding-left: 0;
+        float: none;
+    }
+    .tab-content__right-col .tab-content__image-wrap:nth-child(1) {
+        background-position: -155px;
+    }
+    .theteam__slider {
+        display: block;
+    }
+     /*    Section with text and buton*/
+    .text-btn {
+        height: 450px;
+        background-position: -400px;
+    }
+    .text-btn__info {
+        width: 100%;
+        padding-right: 0;
+        float: none;
+        text-align: center;
+    }
+    .title {
+        font-size: 25px;
+    }
+    .text-btn__subtitle {
+        font-size: 18px;
+    }
+    .text-btn__text {
+        font-size: 14px;
+    }
+    .btn-wrap__btn {
+        min-width: 0;
+        font-size: 12px;
+    }
+    .btn-wrap--left {
+        text-align: center;
+    }
+    /*    Footer*/
+    .footer {
+        padding: 25px 0;
+    }
+    .footer__copyright {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+
+    
+}
+
+@media only screen and (max-width: 480px) {
+    .site-header {
+        height: 100%;
+    }
+    .menuToggle {
+        display: block;
+        margin-bottom: 15px;
+    }
+    .menu {
+        position: absolute;
+        top: 60%;
+        left: 25%;
+        padding: 5px;
+        line-height: 17px;
+        display: none;
+        background: rgba(143, 188, 143, 0.5);
+    }
+    .menu .menu-item {
+        display: block;
+        text-align: center;
+        font-size: 11px;
+        padding: 0;
+        margin: 0;
+    }
+    .menu .menu-item:before {
+        content: '';
+    }
+    .menu .menu-item a {
+        color: brown;
+    }
+    .site-header .info {
+        margin: 5vh auto 0;
+    }
+    .info__title {
+        font-size: 13px;
+    }
+    .info__subtitle {
+        font-size: 11px;
+    }
+    .btn-wrap {
+        padding-top: 10px;
+    }
+    .btn-wrap__btn {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+    /*    Tabs*/
+    .menuTabs {
+        display: block;
+        margin-bottom: 15px;
+    }
+    .tabs-menu {
+        width: 90%;
+        position: absolute;
+        display: none;
+        background: rgba(143, 188, 143, 0.5);
+        z-index: 2;
+    }
+    .tabs-menu__item {
+        float: none;
+        padding: 0 5px 5px;
+        display: block;
+    }
+    .tab-content__left-col {
+        display: none;
+        width: 100%;
+        padding-right: 0;
+        float: none;
+    }
+    .tab-content__right-col {
+        width: 100%;
+        padding-left: 0;
+        float: none;
+    }
+    .tab-content__right-col .tab-content__image-wrap:nth-child(1) {
+        background-position: -155px;
+    }
+    .theteam__slider {
+        display: block;
+    }
+    /*    Section with text and buton*/
+    .text-btn {
+        height: 450px;
+        background-position: -400px;
+    }
+    .text-btn__info {
+        width: 100%;
+        padding-right: 0;
+        float: none;
+        text-align: center;
+    }
+    .title {
+        font-size: 25px;
+    }
+    .text-btn__subtitle {
+        font-size: 18px;
+    }
+    .text-btn__text {
+        font-size: 14px;
+    }
+    .btn-wrap__btn {
+        min-width: 0;
+        font-size: 12px;
+    }
+    .btn-wrap--left {
+        text-align: center;
+    }
+    /*form*/
+    .contact-form__title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .contact-form {
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+    .form__text--name {
+        width: 100%;
+    }
+    .form__text:not(.form__text--message) {
+        height: 40px;
+    }
+    .form__input {
+        height: 36px;
+    }
+    .form__text--email {
+        width: 100%;
+    }
+    .form__textarea {
+        height: 120px;
+    }
+    .form__text--message {
+        height: 124px;
+    }
+    .form-btn {
+        height: 40px;
+    }
+    /*    Footer*/
+    .footer {
+        padding: 25px 0;
+    }
+    .footer__copyright {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+    .footer__social {
+        float: none;
+    }
+    .social__item {
+        width: 40px;
+        height: 20px;
+        float: none;
+        display: inline-block;
+        margin: 15px 0 15px 20px;
+    }
+    .social__item:before {
+        border-left: 21.5px solid transparent;
+        border-right: 18.5px solid transparent;
+    }
+    .social__item:after {
+        border-left: 21.5px solid transparent;
+        border-right: 18.5px solid transparent;
+    }
+}
+    
 }
 
 @media only screen and (max-width: 320px) {
@@ -391,7 +696,159 @@
     }
     .btn-wrap__btn {
         padding: 5px 10px;
-        font-size: 10px;
-
+        font-size: 12px;
     }
+    /*    Tabs*/
+    .menuTabs {
+        display: block;
+        margin-bottom: 15px;
+    }
+    .tabs-menu {
+        width: 90%;
+        position: absolute;
+        display: none;
+        background: rgba(143, 188, 143, 0.5);
+        z-index: 2;
+    }
+    .tabs-menu__item {
+        float: none;
+        padding: 0 5px 5px;
+        display: block;
+    }
+    .tab-content__left-col {
+        display: none;
+        width: 100%;
+        padding-right: 0;
+        float: none;
+    }
+    .tab-content__right-col {
+        width: 100%;
+        padding-left: 0;
+        float: none;
+    }
+    .tab-content__right-col .tab-content__image-wrap:nth-child(1) {
+        background-position: -155px;
+    }
+    .theteam__slider {
+        display: block;
+    }
+    /*    Section with text and buton*/
+    .text-btn {
+        height: 450px;
+        background-position: -400px;
+    }
+    .text-btn__info {
+        width: 100%;
+        padding-right: 0;
+        float: none;
+        text-align: center;
+    }
+    .title {
+        font-size: 25px;
+    }
+    .text-btn__subtitle {
+        font-size: 18px;
+    }
+    .text-btn__text {
+        font-size: 14px;
+    }
+    .btn-wrap__btn {
+        min-width: 0;
+        font-size: 12px;
+    }
+    .btn-wrap--left {
+        text-align: center;
+    }
+    /*form*/
+    .contact-form__title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .contact-form {
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+    .form__text--name {
+        width: 100%;
+    }
+    .form__text:not(.form__text--message) {
+        height: 40px;
+    }
+    .form__input {
+        height: 36px;
+    }
+    .form__text--email {
+        width: 100%;
+    }
+    .form__textarea {
+        height: 120px;
+    }
+    .form__text--message {
+        height: 124px;
+    }
+    .form-btn {
+        height: 40px;
+    }
+    /*    Footer*/
+    .footer {
+        padding: 25px 0;
+    }
+    .footer__copyright {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+    .footer__social {
+        float: none;
+    }
+    .social__item {
+        width: 40px;
+        height: 20px;
+        float: none;
+        display: inline-block;
+        margin: 15px 0 15px 20px;
+    }
+    .social__item:before {
+        border-left: 21.5px solid transparent;
+        border-right: 18.5px solid transparent;
+    }
+    .social__item:after {
+        border-left: 21.5px solid transparent;
+        border-right: 18.5px solid transparent;
+    }
+}
+
+
+.btn_up {
+    position: fixed;
+    bottom: -50px;
+    right: 100px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    background: #333;
+    z-index: 100;
+    outline: 0!important;
+    transition: .4s;
+}
+
+.btn_up:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #ccc;
+    border-left: 2px solid #ccc;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 4px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.btn_up.active {
+    bottom: 15px;
+    right: 15px;
 }
